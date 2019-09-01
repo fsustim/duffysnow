@@ -4,9 +4,8 @@
   "description": "Animation on Scroll Library:  Put in the header https://github.com/michalsnik/aos",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js"
-  },
-  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

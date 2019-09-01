@@ -11,8 +11,11 @@ require('./models');
 // configure body parser for AJAX requests
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(routes);
 
+// ADD THIS LINE
+app.use(express.static('client/build'));
+
+app.use(routes);
 
 // Bootstrap server
 app.listen(PORT, () => {
